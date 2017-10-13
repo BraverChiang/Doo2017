@@ -41,6 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				4CDCF5211F910AFC00768927 /* Doo2017 */,
+				4CDCF5371F910B0E00768927 /* Support */,
 				4CDCF5201F910AFC00768927 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +57,22 @@
 		4CDCF5211F910AFC00768927 /* Doo2017 */ = {
 			isa = PBXGroup;
 			children = (
-				4CDCF5221F910AFC00768927 /* AppDelegate.swift */,
 				4CDCF5241F910AFC00768927 /* ViewController.swift */,
 				4CDCF5261F910AFC00768927 /* Main.storyboard */,
-				4CDCF52C1F910AFC00768927 /* Assets.xcassets */,
 				4CDCF52E1F910AFC00768927 /* LaunchScreen.storyboard */,
 				4CDCF5311F910AFC00768927 /* Info.plist */,
-				4CDCF5291F910AFC00768927 /* Doo2017.xcdatamodeld */,
 			);
 			path = Doo2017;
+			sourceTree = "<group>";
+		};
+		4CDCF5371F910B0E00768927 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4CDCF5221F910AFC00768927 /* AppDelegate.swift */,
+				4CDCF52C1F910AFC00768927 /* Assets.xcassets */,
+				4CDCF5291F910AFC00768927 /* Doo2017.xcdatamodeld */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
