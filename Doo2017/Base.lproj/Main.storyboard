@@ -77,7 +77,7 @@
                         <viewLayoutGuide key="safeArea" id="eZA-eg-zTw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Onee" id="Dgz-pt-lno">
-                        <barButtonItem key="backBarButtonItem" title="1" id="tB8-c4-qji"/>
+                        <barButtonItem key="backBarButtonItem" id="tB8-c4-qji"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="J4K-ye-PSi"/>
                     </navigationItem>
                 </viewController>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="1028" y="-404"/>
         </scene>
-        <!--View Controller-->
+        <!--One2 View Controller-->
         <scene sceneID="Km2-H2-a7X">
             <objects>
-                <viewController id="Ijc-cT-MDA" sceneMemberID="viewController">
+                <viewController id="Ijc-cT-MDA" customClass="One2ViewController" customModule="Doo2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WZN-Kf-YKU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
