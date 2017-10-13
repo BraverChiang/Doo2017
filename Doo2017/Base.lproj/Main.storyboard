@@ -55,7 +55,7 @@
             </objects>
             <point key="canvasLocation" x="188" y="1387"/>
         </scene>
-        <!--View Controller-->
+        <!--Onee-->
         <scene sceneID="dcB-X4-hTj">
             <objects>
                 <viewController id="Cr4-qm-iHO" sceneMemberID="viewController">
@@ -76,7 +76,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="eZA-eg-zTw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Dgz-pt-lno"/>
+                    <navigationItem key="navigationItem" title="Onee" id="Dgz-pt-lno">
+                        <barButtonItem key="backBarButtonItem" title="1" id="tB8-c4-qji"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="J4K-ye-PSi"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ac5-Oz-x9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
