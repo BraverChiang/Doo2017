@@ -8,7 +8,7 @@
 
 import UIKit
 
-class One2ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,8 @@ class One2ViewController: UIViewController {
         
         //3滑动时隐藏Nav Bar
         self.navigationController?.hidesBarsOnSwipe = true
+        
+        self.tabBarController?.tabBar.isHidden = true
 
         // Do any additional setup after loading the view.
     }

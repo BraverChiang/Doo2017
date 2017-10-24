@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,6 +55,22 @@
             </objects>
             <point key="canvasLocation" x="188" y="1387"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="xd4-9d-hnK">
+            <objects>
+                <viewController id="B1t-98-fWo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qz5-fD-kcH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="x4m-0Z-RTz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="DCW-Jb-fPD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPj-3n-f1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="2156"/>
+        </scene>
         <!--Onee-->
         <scene sceneID="dcB-X4-hTj">
             <objects>
@@ -85,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="1028" y="-404"/>
         </scene>
-        <!--One2 View Controller-->
+        <!--哈哈-->
         <scene sceneID="Km2-H2-a7X">
             <objects>
-                <viewController id="Ijc-cT-MDA" customClass="One2ViewController" customModule="Doo2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="哈哈" id="Ijc-cT-MDA" customClass="One2ViewController" customModule="Doo2017" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WZN-Kf-YKU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,6 +139,7 @@
                         <segue destination="K52-i5-QdP" kind="relationship" relationship="viewControllers" id="G2z-8h-8Ut"/>
                         <segue destination="n5R-2j-ZYN" kind="relationship" relationship="viewControllers" id="w5H-y4-6iV"/>
                         <segue destination="ZOo-K5-C9I" kind="relationship" relationship="viewControllers" id="aOq-S6-3JV"/>
+                        <segue destination="B1t-98-fWo" kind="relationship" relationship="viewControllers" id="GRK-44-doX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPm-I5-zqy" userLabel="First Responder" sceneMemberID="firstResponder"/>
