@@ -129,6 +129,37 @@ class ProductsTableViewController: UITableViewController {
         productlines[fromIndexPath.section].products.remove(at: fromIndexPath.row)
         productlines[fromIndexPath.section].products.insert(item, at: to.row)
     }
+    
+    var selectedItem: Product?
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedItem = productlines[indexPath.section].products[indexPath.row]
+        performSegue(withIdentifier: "SegueProductDetail", sender: self)
+        //        // checkmark:
+        //        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark{
+        //            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+        //        }else{
+        //            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+        //        }
+        
+    }
+    
+    
+    
+    //功能: 向下一页面ProductDetailTableViewController传值
+    //位置: Controller中
+    //Oct 25, 2017  1:29 PM
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SegueProductDetail" {
+            let productDetailTableViewController = segue.destination as! ProductDetailTableViewController
+            productDetailTableViewController.product = selectedItem
+        }
+
+    }
+    
+    /*
+     //下一页中代码参考
+          */
 
     /*
     // Override to support conditional editing of the table view.

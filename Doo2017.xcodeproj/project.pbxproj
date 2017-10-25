@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C08881B1FA053B700F1BBEC /* ProductDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08881A1FA053B700F1BBEC /* ProductDetailTableViewController.swift */; };
 		4C49D6CD1F9F457E00FD7D23 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C49D6CC1F9F457E00FD7D23 /* Home.storyboard */; };
 		4C7177DB1F9F4D6A007E21BE /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7177DA1F9F4D6A007E21BE /* Message.storyboard */; };
 		4C7177DD1F9F4E09007E21BE /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C7177DC1F9F4E09007E21BE /* Discovery.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C08881A1FA053B700F1BBEC /* ProductDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailTableViewController.swift; sourceTree = "<group>"; };
 		4C49D6CC1F9F457E00FD7D23 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		4C7177DA1F9F4D6A007E21BE /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		4C7177DC1F9F4E09007E21BE /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				4C75B1541F911CB700BBA709 /* HomeViewController.swift */,
 				4CC86F661F9F9B2300454129 /* ProductsTableViewController.swift */,
+				4C08881A1FA053B700F1BBEC /* ProductDetailTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				4CC86F671F9F9B2300454129 /* ProductsTableViewController.swift in Sources */,
 				4CEB02FA1F9FA8FD002B74D7 /* ProductTableViewCell.swift in Sources */,
 				4CC86F631F9F8FBD00454129 /* Product.swift in Sources */,
+				4C08881B1FA053B700F1BBEC /* ProductDetailTableViewController.swift in Sources */,
 				4CC86F651F9F914900454129 /* ProductLine.swift in Sources */,
 				4C75B1551F911CB700BBA709 /* HomeViewController.swift in Sources */,
 				4CDCF52B1F910AFC00768927 /* Doo2017.xcdatamodeld in Sources */,
