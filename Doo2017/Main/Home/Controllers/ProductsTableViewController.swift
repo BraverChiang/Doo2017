@@ -10,8 +10,8 @@ import UIKit
 
 class ProductsTableViewController: UITableViewController {
     
-    //第1条产品线.所有产品
-    var products = ProductLine.getProductLines()[0].products
+    
+    var productlines = ProductLine.getProductLines()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,13 +39,13 @@ class ProductsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return productlines.count
     }
 
     //产品数量
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return products.count
+        return productlines[section].products.count
     }
 
     
@@ -54,11 +54,19 @@ class ProductsTableViewController: UITableViewController {
 
         //产品集合(餐车)(Model)中的某个位置的产品
         
-        //prodt相当于刚从"餐车"取出来的"菜"
-        let prodt = products[indexPath.row]
-        //product相当于"桌子的格子"收到的"菜"
+//        //prodt相当于刚从"餐车"取出来的"菜"
+//        let prodt = products[indexPath.row]
+//        //product相当于"桌子的格子"收到的"菜"
+//        cell.product = prodt
+        
+        let prodt = productlines[indexPath.section].products[indexPath.row]
         cell.product = prodt
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let productline = self.productlines[section]
+        return productline.name
     }
 
     /*
