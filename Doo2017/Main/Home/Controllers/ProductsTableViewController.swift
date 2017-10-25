@@ -19,6 +19,8 @@ class ProductsTableViewController: UITableViewController {
         //自适应 行高
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        navigationItem.rightBarButtonItem = editButtonItem
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -67,6 +69,65 @@ class ProductsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         let productline = self.productlines[section]
         return productline.name
+    }
+    
+    //前提: 有"渲染"代码
+    //功能: 向左滑动Cell进行删除
+    //位置: ViewController中
+    
+    // 可否编辑：Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    // 编辑：增加，删除。 Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            let productLine = productlines[indexPath.section]
+            productLine.products.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)//Apple效果好, 推荐
+            //tableView.reloadData()//youtube无动效, 不推荐.
+            
+            
+        }
+//        else if editingStyle == .insert {
+//            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+//            list.append("Jiang")//?
+//            tableView.insertRows(at: [indexPath], with: .fade)//?
+//        }
+    }
+    
+//    //前提: 有"渲染"代码, canEdit是true
+//    //功能: 手动排序
+//    //位置: ViewController中
+//    @IBOutlet weak var myTableView: UITableView!
+//    @IBOutlet weak var myEditButton: UIBarButtonItem!
+//
+//    //进入排序状态
+//    @IBAction func JEditBtn(_ sender: Any) {
+//        if myTableView.isEditing {
+//            myEditButton.title = "edit"
+//
+//            myTableView.setEditing(false, animated: false)
+//        }else{
+//            myEditButton.title = "done"
+//            myTableView.setEditing(true, animated: false)
+//        }
+//
+//    }
+    // 可否排序 Override to support conditional rearranging of the table view.
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    
+    // 执行排序 Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+        let item = productlines[fromIndexPath.section].products[fromIndexPath.row]
+        productlines[fromIndexPath.section].products.remove(at: fromIndexPath.row)
+        productlines[fromIndexPath.section].products.insert(item, at: to.row)
     }
 
     /*
