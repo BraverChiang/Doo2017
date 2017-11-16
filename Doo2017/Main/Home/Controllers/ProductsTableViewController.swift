@@ -133,7 +133,7 @@ class ProductsTableViewController: UITableViewController {
     var selectedItem: Product?
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedItem = productlines[indexPath.section].products[indexPath.row]
+        selectedItem = productlines[indexPath.section].products[indexPath.row] 
         performSegue(withIdentifier: "SegueProductDetail", sender: self)
         //        // checkmark:
         //        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark{
