@@ -42,7 +42,7 @@ struct JImage: Decodable {
     let width: Int
 }
 
-//与第4层对应的最终的: "熟菜"
+//与第4层对应的最终的: "熟菜"..
 struct MyAlbum {
     let myName: String
     let myImage: UIImage
